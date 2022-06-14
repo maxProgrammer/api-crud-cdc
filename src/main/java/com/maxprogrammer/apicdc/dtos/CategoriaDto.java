@@ -1,8 +1,8 @@
-package com.maxprogrammer.apicdc.forms;
+package com.maxprogrammer.apicdc.dtos;
 
 import com.maxprogrammer.apicdc.models.Categoria;
 
-public class NovaCategoriaForm {
+public class CategoriaDto {
 
     private String nome;
 

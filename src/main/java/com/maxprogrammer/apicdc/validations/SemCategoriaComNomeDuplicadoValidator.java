@@ -1,6 +1,6 @@
-package com.maxprogrammer.apicdc.validators;
+package com.maxprogrammer.apicdc.validations;
 
-import com.maxprogrammer.apicdc.forms.NovaCategoriaForm;
+import com.maxprogrammer.apicdc.dtos.CategoriaDto;
 import com.maxprogrammer.apicdc.models.Categoria;
 import com.maxprogrammer.apicdc.repository.CategoriaRepository;
 import org.springframework.validation.Errors;
@@ -18,12 +18,12 @@ public class SemCategoriaComNomeDuplicadoValidator implements Validator {
 
     @Override
     public boolean supports(Class<?> clazz) {
-        return NovaCategoriaForm.class.isAssignableFrom(clazz);
+        return CategoriaDto.class.isAssignableFrom(clazz);
     }
 
     @Override
     public void validate(Object target, Errors errors) {
-        NovaCategoriaForm form = (NovaCategoriaForm) target;
+        CategoriaDto form = (CategoriaDto) target;
         Optional<Categoria> possivelCategoria = categoriaRepository.findByNome(form.getNome());
 
         if (possivelCategoria.isPresent()) {

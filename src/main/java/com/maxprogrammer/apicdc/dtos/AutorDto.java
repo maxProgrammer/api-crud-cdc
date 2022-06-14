@@ -1,11 +1,11 @@
-package com.maxprogrammer.apicdc.forms;
+package com.maxprogrammer.apicdc.dtos;
 
 import com.maxprogrammer.apicdc.models.Autor;
 import org.hibernate.validator.constraints.URL;
 
 import javax.validation.constraints.NotBlank;
 
-public class NovoAutorForm {
+public class AutorDto {
     @NotBlank
     private String nome;
 
@@ -13,7 +13,7 @@ public class NovoAutorForm {
     @URL
     private String linkGithub;
 
-    public NovoAutorForm(String nome, String linkGithub) {
+    public AutorDto(String nome, String linkGithub) {
         this.nome = nome;
         this.linkGithub = linkGithub;
     }
