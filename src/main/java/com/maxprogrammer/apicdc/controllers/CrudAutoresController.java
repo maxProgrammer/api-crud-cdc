@@ -18,7 +18,6 @@ public class CrudAutoresController {
     @Autowired
     private AutorRepository autorRepository;
 
-
     @PostMapping(value = "/api/autor")
     @Operation(summary = "Add a new author")
     @Transactional

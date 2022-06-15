@@ -23,8 +23,8 @@ public class SemCategoriaComNomeDuplicadoValidator implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        CategoriaDto form = (CategoriaDto) target;
-        Optional<Categoria> possivelCategoria = categoriaRepository.findByNome(form.getNome());
+        CategoriaDto categoriaDto = (CategoriaDto) target;
+        Optional<Categoria> possivelCategoria = categoriaRepository.findByNome(categoriaDto.getNome());
 
         if (possivelCategoria.isPresent()) {
             errors.rejectValue("nome", null, "Já existe uma categoria com este nome");

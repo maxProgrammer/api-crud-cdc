@@ -1,14 +1,14 @@
 package com.maxprogrammer.apicdc.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.URL;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.PastOrPresent;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Autor {
@@ -20,6 +20,12 @@ public class Autor {
     private @NotBlank @URL String linkGithub;
     @PastOrPresent
     private LocalDateTime createdAt = LocalDateTime.now();
+
+    public String getNome(){
+        return nome;
+    }
+
+
 
     @Deprecated
     public Autor(){

@@ -47,6 +47,7 @@ public class Livro {
         this.autor = autor;
     }
 
+
     @Override
     public String toString() {
         return "Livro [titulo=" + titulo + ", subTitulo=" + subTitulo + ", preco=" + preco + ", conteudo=" + conteudo
@@ -55,6 +56,17 @@ public class Livro {
     }
 
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public Long getID() {
+        return id;
+    }
+
+    public Autor getAutor() {
+        return autor;
+    }
 }
 
 

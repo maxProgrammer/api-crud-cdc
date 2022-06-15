@@ -1,5 +1,5 @@
-# api-crud-cdc
-> Status In Construction 🚧
+# 🛒 bookStore-api 🛒
+> Status: In Construction 🚧
 ### API created with Java, Spring that controlls a CRUD of authors, books and stateless shopping cart
 
 <h1 align="center">
