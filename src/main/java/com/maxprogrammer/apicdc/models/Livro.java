@@ -33,6 +33,7 @@ public class Livro {
     public Livro() {
 
     }
+
     public Livro(@NotBlank @Size(max = 100) String titulo, @NotBlank @Size(max = 50) String subTitulo,
                  @Min(20) BigDecimal preco, @NotBlank String conteudo, @NotBlank String sumario, @Min(100) int numeroPaginas,
                  @NotBlank String isbn, @NotBlank @URL String linkCapaLivro, @NotNull Autor autor) {
@@ -55,13 +56,40 @@ public class Livro {
                 + linkCapaLivro + ", autor=" + autor + "]";
     }
 
+    public Long getId() {
+        return id;
+    }
 
     public String getTitulo() {
         return titulo;
     }
 
-    public Long getID() {
-        return id;
+    public String getSubTitulo() {
+        return subTitulo;
+    }
+
+    public BigDecimal getPreco() {
+        return preco;
+    }
+
+    public String getConteudo() {
+        return conteudo;
+    }
+
+    public String getSumario() {
+        return sumario;
+    }
+
+    public int getNumeroPaginas() {
+        return numeroPaginas;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getLinkCapaLivro() {
+        return linkCapaLivro;
     }
 
     public Autor getAutor() {

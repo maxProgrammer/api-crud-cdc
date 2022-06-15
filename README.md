@@ -1,6 +1,6 @@
 # 🛒 bookStore-api 🛒
 > Status: In Construction 🚧
-### API created with Java, Spring that controlls a CRUD of authors, books and stateless shopping cart
+### API created with Java, Spring that controlls a CRUD of authors, books, category and stateless shopping cart
 
 <h1 align="center">
   <img alt="Readme" title="Readme" src="https://user-images.githubusercontent.com/87916631/173470794-bff3a480-e50e-476c-b095-9250db0438af.png"/>

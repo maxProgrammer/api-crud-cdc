@@ -26,7 +26,7 @@ public class LivroParaHome {
 
     public LivroParaHome(Livro livro) {
         this.titulo = livro.getTitulo();
-        this.id = livro.getID();
+        this.id = livro.getId();
         this.nomeAutor = livro.getAutor().getNome();
     }
 

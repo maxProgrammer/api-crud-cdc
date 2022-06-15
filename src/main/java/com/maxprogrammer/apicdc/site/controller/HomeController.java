@@ -16,10 +16,10 @@ public class HomeController {
     @Autowired
     LivroRepository livroRepository;
 
-   @GetMapping(value="/api/home")
-   @Operation(summary = "Return list with all books")
-    public Collection<LivroParaHome> lista(){
-       return livroRepository.findAll().stream().map(LivroParaHome:: new).
-               collect(Collectors.toList());
-   }
+    @GetMapping(value = "/api/home")
+    @Operation(summary = "Return list with all books")
+    public Collection<LivroParaHome> lista() {
+        return livroRepository.findAll().stream().map(LivroParaHome::new).
+                collect(Collectors.toList());
+    }
 }
