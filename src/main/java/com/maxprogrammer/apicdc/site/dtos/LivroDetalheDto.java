@@ -11,7 +11,7 @@ public class LivroDetalheDto {
     private final int paginas;
     private final String isbn;
     private final Long id;
-    private  String sumarioHtml;
+    private String sumarioHtml;
     private BigDecimal preco;
     private String titulo;
     private String subtitulo;
